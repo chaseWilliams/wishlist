@@ -1,13 +1,14 @@
 {
   "name": "wishlist",
+  "productName": "wishlist",
   "version": "0.1.0",
-  "description": "Desktop app that manages a universal wishlist for online shopping",
+  "description": "Manages universal wishlist for online shopping",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
   },
   "author": "Chase Williams",
-  "devDependencies": {
-    "electron": "^2.0.2"
+  "dependencies": {
+    "electron-reload": "^1.2.2"
   }
 }

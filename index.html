@@ -2,60 +2,81 @@
 <html>
 <head>
 <link rel="stylesheet" href="assets/css/uikit.min.css"/>
+<link rel="stylesheet" href="assets/css/main.css"/>
 </head>
 
 <body>
 <div uk-height-viewport="expand: true">
+
+<!-- Sidebar Navigation -->
+
 <div class="uk-text-center uk-height-1-1" uk-grid>
 	<div class="uk-background-muted uk-padding uk-width-1-5"> 
-		<p> Nav </p>
+		<div class="uk-offcanvas-content">
+
+					<!-- The whole page content goes here -->
+			
+					<!-- This is a button toggling the off-canvas -->
+			<span uk-icon="icon: menu; ratio: 2" uk-toggle="target: #sidenav" type="button"></span>
+			
+					<!-- This is an anchor toggling the off-canvas -->
+			<a href="#sidenav" uk-toggle></a>
+			
+					<!-- This is the off-canvas -->
+			<div id="sidenav" uk-offcanvas>
+				<div class="uk-offcanvas-bar" style="width: 20vw">
+			
+					<button class="uk-offcanvas-close" type="button" uk-close></button>
+					<div class="uk-flex uk-flex-column">
+
+						<ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+							<li class="uk-active"><a href="#">Dashboard</a></li>
+							<li><a href="#">Settings</a></li>
+							<li class="uk-parent">
+								<a href="#">Tags</a>
+								<ul class="uk-nav-sub">
+									<li><a href="#">Shoes</a></li>
+									<li><a href="#">Clothes</a></li>
+									<li><a href="#">Essentials</a></li>
+									<li><a href="#"><span uk-icon="icon: plus"></span></a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>	
+			</div>
+		</div>
 	</div>
 
+
+	<!-- Main Content -->
+
+	<!-- Dashboard -->
 	<div class="uk-panel uk-panel-scrollable uk-padding uk-width-expand uk-height-1-1" style="height: 100vh"> 
-		<p> Hello </p>
-		<p> Hello </p>
-		<p> Hello </p>
-		<p> Hello </p>
-		<p> Hello </p>
-		<p> Hello </p>
-		<p> Hello </p>
-		<p> Hello </p>
-		<p> Hello </p>
-		<p> Hello </p>
-		<p> Hello </p>
-		<p> Hello </p>
-		<p> Hello </p>
-		<p> Hello </p>
-		<p> Hello </p>
-		<p> Hello </p>
-		<p> Hello </p>
-		<p> Hello </p>
-		<p> Hello </p>
-		<p> Hello </p>
-		<p> Hello </p>
-		<p> Hello </p>
-		<p> Hello </p>
-		<p> Hello </p>
-		<p> Hello </p>
-		<p> Hello </p>
-		<p> Hello </p>
-		<p> Hello </p>
-		<p> Hello </p>
-		<p> Hello </p>
-		<p> Hello </p>
-		<p> Hello </p>
-		<p> Hello </p>
-		<p> Hello </p>
-		<p> Hello </p>
-		<p> Hello </p>
-		<p> Hello </p>
-		<p> Hello </p>
-		<p> Hello </p>
-		<p> Hello </p>
-		<p> Hello </p>
-		<p> Hello </p>
-		<p> Hello </p>
-		<p> Hello </p>
+		<div uk-grid>
+			<!-- Title and Data Visualizations -->
+			<div class="uk-width-1-2">
+				<h1 class="title">Wishlist</h1>
+			</div>
+
+			<!-- Notable Items Grid -->
+			<div class="uk-width-1-2">
+				<div >
+					<div class="uk-flex uk-flex-row uk-flex-middle uk-padding">
+						<img class="uk-align-left uk-margin-remove" src="https://assets.adidas.com/images/h_600,f_auto,q_auto,fl_lossy/310a08ad52e04cff9810a8620107fefd_9366/Ultraboost_All-Terrain_Shoes_Grey_BB6130_01_standard.jpg" style="height: 300px; width: 300px">
+						<span class="uk-width-expand uk-text-center dashboard-price">$185.00</span>
+					</div>
+					<div class="uk-flex uk-flex-row uk-flex-middle uk-padding">
+							<img class="uk-align-left uk-margin-remove" src="https://assets.adidas.com/images/h_600,f_auto,q_auto,fl_lossy/310a08ad52e04cff9810a8620107fefd_9366/Ultraboost_All-Terrain_Shoes_Grey_BB6130_01_standard.jpg" style="height: 300px; width: 300px">
+							<span class="uk-width-expand uk-text-center dashboard-price">$185.00</span>
+					</div>
+					<div class="uk-flex uk-flex-row uk-flex-middle uk-padding">
+							<img class="uk-align-left uk-margin-remove" src="https://assets.adidas.com/images/h_600,f_auto,q_auto,fl_lossy/310a08ad52e04cff9810a8620107fefd_9366/Ultraboost_All-Terrain_Shoes_Grey_BB6130_01_standard.jpg" style="height: 300px; width: 300px">
+							<span class="uk-width-expand uk-text-center dashboard-price">$185.00</span>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
 </div>
